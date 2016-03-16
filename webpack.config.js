@@ -1,5 +1,5 @@
-var webpack = require('webpack')
-var path = require('path')
+var webpack = require('webpack');
+var path = require('path');
 
 var config = {
   entry: __dirname + '/src/index.js',
@@ -24,6 +24,10 @@ var config = {
         test: /\.js$/,
         loader: "eslint-loader",
         exclude: /node_modules/
+      },
+      {
+        test: /\.scss$/,
+        loader: ['style', 'css', 'sass']
       }
     ]
   },
@@ -31,6 +35,6 @@ var config = {
     root: path.resolve('./src'),
     extensions: ['', '.js']
   }
-}
+};
 
-module.exports = config
+module.exports = config;

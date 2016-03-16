@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import twemoji from 'twemoji'
-import Rater from '../src/'
+import Rater from '../src/';
+import './index.scss';
 
 class Face extends Component {
   render() {

@@ -1,24 +1,21 @@
-import React, { Component } from 'react'
-
+import React, { Component } from 'react';
+import classnames from 'classnames';
 export default class Star extends Component {
   render() {
-    let nameMap = {
-      isDisabled: 'is-disabled',
-      isActive: 'is-active',
-      willBeActive: 'will-be-active'
-    }
-    let className = Object.keys(nameMap)
-          .filter((prop) => this.props[prop])
-          .map((prop) => nameMap[prop])
-          .join(' ')
+    let starClasses = classnames('star', {
+      'is-disabled': this.props.isDisabled,
+      'is-active': this.props.isActive,
+      'will-be-active': this.props.willBeActive
+    });
+
     return (
-        <a className={className}>★</a>
+        <span className={starClasses}>★</span>
     )
   }
-}
+};
 
 Star.defaultProps = {
   willBeActive: false,
   isActive: false,
   isDisabled: false
-}
+};
