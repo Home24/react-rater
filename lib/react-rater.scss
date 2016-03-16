@@ -1,0 +1,27 @@
+$react-rater-link: #e3e3e3 !default;
+$react-rater-hover: #ffa300 !default;
+$react-rater-active: #ffa300 !default;
+
+.react-rater {
+    display: inline-block;
+    line-height: normal;
+    .star {
+        cursor: pointer;
+        color: $react-rater-link;
+        &.will-be-active {
+            color: $react-rater-hover;
+        }
+        &.is-active {
+            color: $react-rater-active;
+        }
+        &.is-disabled {
+            color: $react-rater-link;
+            cursor: not-allowed;
+        }
+    }
+    &.is-disabled {
+      .star {
+        cursor: default;
+      }
+    }
+}
