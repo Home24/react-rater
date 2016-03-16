@@ -21,8 +21,7 @@
     "build-lib": "rm -rf lib && babel src --out-dir lib && cp src/react-rater.scss lib",
     "build-dist": "webpack; npm run -s compile-scss >> dist/react-rater.css",
     "build-example-js": "webpack --config example/webpack.config.js",
-    "build-example": "npm run build-example-js",
-    "prepublish": "npm run build-lib"
+    "build-example": "npm run build-example-js"
   },
   "repository": {
     "type": "git",
