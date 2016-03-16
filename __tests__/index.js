@@ -11,7 +11,7 @@ describe('<Rater total={5} rating={2} limit={4} />', () => {
     const rater = TestUtils.renderIntoDocument(
       <Rater total={5} rating={2} limit={4} />
     )
-    const stars = TestUtils.scryRenderedDOMComponentsWithTag(rater, 'a')
+    const stars = TestUtils.scryRenderedDOMComponentsWithClass(rater, 'star')
     const activeStars = TestUtils.scryRenderedDOMComponentsWithClass(rater, 'is-active')
     const unclickableStars = TestUtils.scryRenderedDOMComponentsWithClass(rater, 'is-disabled')
 
@@ -24,7 +24,7 @@ describe('<Rater total={5} rating={2} limit={4} />', () => {
     const rater = TestUtils.renderIntoDocument(
       <Rater total={5} rating={2} limit={4} />
     )
-    const stars = TestUtils.scryRenderedDOMComponentsWithTag(rater, 'a')
+    const stars = TestUtils.scryRenderedDOMComponentsWithClass(rater, 'star')
     TestUtils.Simulate.click(stars[3])
     TestUtils.Simulate.click(stars[4])
     expect(rater.state.rating).toEqual(4)

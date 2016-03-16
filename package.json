@@ -26,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/NdYAG/react-rater.git"
+    "url": "https://github.com/Home24/react-rater.git"
   },
   "keywords": [
     "react",
@@ -37,9 +37,9 @@
   "author": "NdYAG",
   "license": "BSD",
   "bugs": {
-    "url": "https://github.com/NdYAG/react-rater/issues"
+    "url": "https://github.com/Home24/react-rater/issues"
   },
-  "homepage": "https://github.com/NdYAG/react-rater",
+  "homepage": "https://github.com/Home24/react-rater",
   "dependencies": {
     "classnames": "^2.2.3",
     "react": "^0.14.6",
